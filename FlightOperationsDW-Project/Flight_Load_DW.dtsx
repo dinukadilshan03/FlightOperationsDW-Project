@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="36"
-  DTS:VersionGUID="{75E9AFCD-D1F8-4FB4-9B2E-6A3E657B3D63}">
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{A5D15F74-153A-4D9E-BE3C-2356842816A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACo5iclk3l37+X8HI6/Zjc5GgI+Pc+ZPMj4nFiSZHTe0QAAAAAOgAAAAAIAACAAAAAyI7wU/ZUH8qJT8m/3N7Je8tezpzEcPkrTrSJXXxSbxiAAAABdvLIq7WSreDWv0xgnr0toSJwvqP5G9W7w5vvn+dQqTEAAAAA/7gwLXDOgoTDs/kbXVUT0yMc0iA057HiegU1wEUsqOQW4JoXAfWPuQY6s51dBJCezyyBCJ+G3tWNVjNW6YVXP</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD9GC673gtWHPL7a2ED4OxS2oQvibjOOS6/GioSOrMKEwAAAAAOgAAAAAIAACAAAAByhHct3sP7F4y5VubHWl1OvQtzxzegeEewe+5LCkAvciAAAADIdK9z+KLDeZRLaIDpYRgOz71KV+rDixV3xtOz9A9dQEAAAACFYpfQyyTbGes0jMiTmgs6FVg8+ZVQQ/iAARKiLOUORcWdNJ6KPzA3Z22LTJzyF0Grl3ljlFa3nEyx/4E2C8wF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABAXL/FuoCDwplzI4IXzDnkSHetU8huk/+DEtryFJaabQAAAAAOgAAAAAIAACAAAADXGx0kvm1XqaCFHnGQme7fmG7ScRY1+xdweIXUfyNdJSAAAACgE7xu3qxoyVPMOxXmIwMbFEuLp2ttaaHTJCJv1D0NxEAAAAC2DJP11UEq0Ccb/+Hs4D16SMluRT9m5EeUL3lm54sx7Hd48nB1DEA4M8Eq6FnLb7FmdmuZD6WFd/wbvvfgUg+w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACB1cFcdEcMsVvTd3HLh7NMwSa+OC+2OXGvAcrFFBjuwgAAAAAOgAAAAAIAACAAAABoIyhCIPm0j1a6JnQgOaEp3v0Y8wA4ScM0PTLlnJ4/lyAAAAADJzrCUlU4nrNka85k3K04gj27fDYg6Rn7CKKZaOHTKEAAAAAotvRqEM0WcJWhYSL+KavuqwFucok39MweHcrEGZxeIe9iMVXc8ngCdmHgOiGU/1vHQlMMNDL/ntG8xKVw8uN+</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="CurrentDate">
       <DTS:VariableValue
-        DTS:DataType="7">3/26/2026 3:27:19 PM</DTS:VariableValue>
+        DTS:DataType="7">3/26/2026 5:02:19 PM</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -4026,6 +4026,2346 @@ where [refTable].[AlternateAirportID] = ?</property>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Transform and Load Ticket Sales Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{1CE73DE6-2215-452F-B918-29BA97287BAF}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Transform and Load Ticket Sales Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Inputs[Data Conversion Input].Columns[passenger_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="passenger_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[passenger_id]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Inputs[Data Conversion Input].Columns[flight_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="flight_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[flight_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[passenger_id_conv]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[passenger_id_conv]"
+                      name="passenger_id_conv"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[passenger_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[flight_id_conv]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[flight_id_conv]"
+                      name="flight_id_conv"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[flight_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output].Columns[InsertDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output].Columns[InsertDate]"
+                      name="InsertDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output].Columns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output].Columns[ModifiedDate]"
+                      name="ModifiedDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Inputs[Derived Column Input].Columns[booking_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="booking_date"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[booking_date]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Inputs[Derived Column Input].Columns[payment_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="payment_date"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[booking_date_only]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[booking_date_only]"
+                      name="booking_date_only"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIMESTAMP)(DT_DBDATE)#{Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[booking_date]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(DT_DBDATE)booking_date</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[payment_date_only]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[payment_date_only]"
+                      name="payment_date_only"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIMESTAMP)(DT_DBDATE)#{Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_date]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(DT_DBDATE)payment_date</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Extract from Payments Staging"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[StgPayments]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[ticket_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[ticket_id]"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[ticket_id]"
+                      name="ticket_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_id]"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_id]"
+                      name="payment_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_method]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_method]"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_method]"
+                      name="payment_method"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_amount]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_amount]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_amount]"
+                      name="payment_amount"
+                      precision="12"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_date]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_date]"
+                      name="payment_date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[ticket_id]"
+                      dataType="wstr"
+                      length="100"
+                      name="ticket_id" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_id]"
+                      dataType="wstr"
+                      length="100"
+                      name="payment_id" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_method]"
+                      dataType="wstr"
+                      length="100"
+                      name="payment_method" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_amount]"
+                      dataType="numeric"
+                      name="payment_amount"
+                      precision="12"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].ExternalColumns[payment_date]"
+                      dataType="dbTimeStamp"
+                      name="payment_date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_id]"
+                      name="payment_id" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[ticket_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[ticket_id]"
+                      name="ticket_id" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_method]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_method]"
+                      name="payment_method" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_amount]"
+                      dataType="numeric"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_amount]"
+                      name="payment_amount"
+                      precision="12"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[payment_date]"
+                      name="payment_date" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Extract from Ticket Staging"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[StgTickets]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[ticket_id]"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_id]"
+                      name="ticket_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[flight_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[flight_id]"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[flight_id]"
+                      name="flight_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[passenger_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[passenger_id]"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[passenger_id]"
+                      name="passenger_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[seat_class]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[seat_class]"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[seat_class]"
+                      name="seat_class"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_price]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[ticket_price]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_price]"
+                      name="ticket_price"
+                      precision="12"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[booking_date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[booking_date]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[booking_date]"
+                      name="booking_date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[ticket_id]"
+                      dataType="wstr"
+                      length="100"
+                      name="ticket_id" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[flight_id]"
+                      dataType="wstr"
+                      length="100"
+                      name="flight_id" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[passenger_id]"
+                      dataType="wstr"
+                      length="100"
+                      name="passenger_id" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[seat_class]"
+                      dataType="wstr"
+                      length="100"
+                      name="seat_class" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[ticket_price]"
+                      dataType="numeric"
+                      name="ticket_price"
+                      precision="12"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].ExternalColumns[booking_date]"
+                      dataType="dbTimeStamp"
+                      name="booking_date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ticket_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ticket_id]"
+                      name="ticket_id" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[flight_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[flight_id]"
+                      name="flight_id" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[passenger_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[passenger_id]"
+                      name="passenger_id" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[seat_class]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[seat_class]"
+                      name="seat_class" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ticket_price]"
+                      dataType="numeric"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ticket_price]"
+                      name="ticket_price"
+                      precision="12"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[booking_date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[booking_date]"
+                      name="booking_date" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Load FactTicketSales"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FactTicketSales]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[PassengerSK]"
+                      cachedDataType="i4"
+                      cachedName="PassengerSK"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PassengerSK]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Match Output].Columns[PassengerSK]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[FlightSK]"
+                      cachedDataType="i4"
+                      cachedName="FlightSK"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[FlightSK]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Match Output].Columns[FlightSK]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[PaymentDateSK]"
+                      cachedDataType="i4"
+                      cachedName="PaymentDateSK"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PaymentDateSK]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Match Output].Columns[PaymentDateSK]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[InsertDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="InsertDate"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[InsertDate]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output].Columns[InsertDate]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[ModifiedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ModifiedDate"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output].Columns[ModifiedDate]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[ticket_price]"
+                      cachedDataType="numeric"
+                      cachedName="ticket_price"
+                      cachedPrecision="12"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[TicketPrice]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[ticket_price]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[payment_amount]"
+                      cachedDataType="numeric"
+                      cachedName="payment_amount"
+                      cachedPrecision="12"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PaymentAmount]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_amount]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[BookingDateSK]"
+                      cachedDataType="i4"
+                      cachedName="BookingDateSK"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[DateSK]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Match Output].Columns[BookingDateSK]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[payment_method]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="payment_method"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PaymentMethod]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_method]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[seat_class]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="seat_class"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[SeatClass]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[seat_class]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].Columns[ticket_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ticket_id"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[TicketID]"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[ticket_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[TicketSalesSK]"
+                      dataType="i4"
+                      name="TicketSalesSK" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[FlightSK]"
+                      dataType="i4"
+                      name="FlightSK" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PassengerSK]"
+                      dataType="i4"
+                      name="PassengerSK" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[DateSK]"
+                      dataType="i4"
+                      name="DateSK" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PaymentDateSK]"
+                      dataType="i4"
+                      name="PaymentDateSK" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[TicketID]"
+                      dataType="wstr"
+                      length="100"
+                      name="TicketID" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[TicketPrice]"
+                      dataType="numeric"
+                      name="TicketPrice"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PaymentAmount]"
+                      dataType="numeric"
+                      name="PaymentAmount"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[SeatClass]"
+                      dataType="wstr"
+                      length="100"
+                      name="SeatClass" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[PaymentMethod]"
+                      dataType="wstr"
+                      length="100"
+                      name="PaymentMethod" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[InsertDate]"
+                      dataType="dbTimeStamp"
+                      name="InsertDate" />
+                    <externalMetadataColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="ModifiedDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Lookup booking date"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup booking date"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimDate]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimDate]) [refTable]
+where [refTable].[Date] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DateKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FullDateUK" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="FullDateUSA" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfMonth" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DaySuffix" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayName" dataType="DT_STR" length="9" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekUSA" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekUK" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekInMonth" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekInYear" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfQuarter" dataType="DT_STR" length="3" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfYear" dataType="DT_STR" length="3" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WeekOfMonth" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WeekOfQuarter" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WeekOfYear" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Month" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MonthName" dataType="DT_STR" length="9" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MonthOfQuarter" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Quarter" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="QuarterName" dataType="DT_STR" length="9" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Year" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="YearName" dataType="DT_STR" length="7" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MonthYear" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MMYYYY" dataType="DT_STR" length="6" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="FirstDayOfMonth" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastDayOfMonth" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstDayOfQuarter" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastDayOfQuarter" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstDayOfYear" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastDayOfYear" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsHolidaySL" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsWeekday" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HolidaySL" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="isCurrentDay" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="isDataAvailable" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="isLatestDataAvailable" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[booking_date_only]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Inputs[Lookup Input].Columns[booking_date_only]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="booking_date_only"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[booking_date_only]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Date</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Match Output].Columns[BookingDateSK]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Match Output].Columns[BookingDateSK]"
+                      name="BookingDateSK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">DateKey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Lookup Flight"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup Flight"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimFlight]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimFlight]) [refTable]
+where [refTable].[AlternateFlightID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="FlightSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AlternateFlightID" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FlightNumber" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AircraftSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DepartureAirportSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ArrivalAirportSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ScheduledDeparture" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ScheduledArrival" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ActualDeparture" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ActualArrival" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DelayMinutes" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FlightStatus" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InsertDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ModifiedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[flight_id_conv]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Inputs[Lookup Input].Columns[flight_id_conv]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="flight_id_conv"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[flight_id_conv]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">AlternateFlightID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Match Output].Columns[FlightSK]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Match Output].Columns[FlightSK]"
+                      name="FlightSK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">FlightSK</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup Passenger"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimPassenger]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimPassenger]) [refTable]
+where [refTable].[AlternatePassengerID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PassengerSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AlternatePassengerID" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Name" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Country" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoyaltyTier" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RegistrationDate" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StartDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EndDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsCurrent" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InsertDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ModifiedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[passenger_id_conv]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Inputs[Lookup Input].Columns[passenger_id_conv]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="passenger_id_conv"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output].Columns[passenger_id_conv]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">AlternatePassengerID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Match Output].Columns[PassengerSK]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Match Output].Columns[PassengerSK]"
+                      name="PassengerSK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">PassengerSK</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup Payment date"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimDate]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimDate]) [refTable]
+where [refTable].[Date] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DateKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FullDateUK" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="FullDateUSA" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfMonth" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DaySuffix" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayName" dataType="DT_STR" length="9" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekUSA" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekUK" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekInMonth" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfWeekInYear" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfQuarter" dataType="DT_STR" length="3" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DayOfYear" dataType="DT_STR" length="3" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WeekOfMonth" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WeekOfQuarter" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="WeekOfYear" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Month" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MonthName" dataType="DT_STR" length="9" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MonthOfQuarter" dataType="DT_STR" length="2" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Quarter" dataType="DT_STR" length="1" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="QuarterName" dataType="DT_STR" length="9" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Year" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="YearName" dataType="DT_STR" length="7" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MonthYear" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MMYYYY" dataType="DT_STR" length="6" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="FirstDayOfMonth" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastDayOfMonth" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstDayOfQuarter" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastDayOfQuarter" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstDayOfYear" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastDayOfYear" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsHolidaySL" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IsWeekday" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HolidaySL" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="isCurrentDay" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="isDataAvailable" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="isLatestDataAvailable" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[payment_date_only]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Inputs[Lookup Input].Columns[payment_date_only]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="payment_date_only"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output].Columns[payment_date_only]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Date</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Match Output].Columns[PaymentDateSK]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Match Output].Columns[PaymentDateSK]"
+                      name="PaymentDateSK"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">DateKey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[ticket_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ticket_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[ticket_id]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[flight_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="flight_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[flight_id]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[passenger_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="passenger_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[passenger_id]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[ticket_price]"
+                      cachedDataType="numeric"
+                      cachedName="ticket_price"
+                      cachedPrecision="12"
+                      cachedScale="2"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[ticket_price]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[booking_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="booking_date"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[booking_date]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[seat_class]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="seat_class"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[seat_class]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[ticket_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ticket_id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[ticket_id]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="payment_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_id]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="payment_date"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_date]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_method]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="payment_method"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_method]" />
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_amount]"
+                      cachedDataType="numeric"
+                      cachedName="payment_amount"
+                      cachedPrecision="12"
+                      cachedScale="2"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_amount]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[ticket_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[ticket_id]"
+                      name="ticket_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[ticket_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[flight_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[flight_id]"
+                      name="flight_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[flight_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[passenger_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[passenger_id]"
+                      name="passenger_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[passenger_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[ticket_price]"
+                      dataType="numeric"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[ticket_price]"
+                      name="ticket_price"
+                      precision="12"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[ticket_price]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[booking_date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[booking_date]"
+                      name="booking_date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[booking_date]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[seat_class]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[seat_class]"
+                      name="seat_class">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input].Columns[seat_class]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_id]"
+                      name="payment_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_date]"
+                      name="payment_date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_date]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_method]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_method]"
+                      name="payment_method">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_method]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_amount]"
+                      dataType="numeric"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output].Columns[payment_amount]"
+                      name="payment_amount"
+                      precision="12"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input].Columns[payment_amount]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="sort by ticket_id"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Inputs[Sort Input].Columns[ticket_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ticket_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[ticket_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Inputs[Sort Input].Columns[payment_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="payment_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Inputs[Sort Input].Columns[payment_method]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="payment_method"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_method]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Inputs[Sort Input].Columns[payment_amount]"
+                      cachedDataType="numeric"
+                      cachedName="payment_amount"
+                      cachedPrecision="12"
+                      cachedScale="2"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_amount]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Inputs[Sort Input].Columns[payment_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="payment_date"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[ticket_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[ticket_id]"
+                      name="ticket_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[ticket_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_id]"
+                      name="payment_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_method]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_method]"
+                      name="payment_method">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_method]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_amount]"
+                      dataType="numeric"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_amount]"
+                      name="payment_amount"
+                      precision="12"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_amount]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output].Columns[payment_date]"
+                      name="payment_date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output].Columns[payment_date]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="sort by ticket_id 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input].Columns[ticket_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ticket_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input].Columns[flight_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="flight_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[flight_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input].Columns[passenger_id]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="passenger_id"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[passenger_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input].Columns[seat_class]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="seat_class"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[seat_class]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input].Columns[ticket_price]"
+                      cachedDataType="numeric"
+                      cachedName="ticket_price"
+                      cachedPrecision="12"
+                      cachedScale="2"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_price]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input].Columns[booking_date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="booking_date"
+                      lineageId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[booking_date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[ticket_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[ticket_id]"
+                      name="ticket_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[flight_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[flight_id]"
+                      name="flight_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[flight_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[passenger_id]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[passenger_id]"
+                      name="passenger_id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[passenger_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[seat_class]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[seat_class]"
+                      name="seat_class">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[seat_class]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[ticket_price]"
+                      dataType="numeric"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[ticket_price]"
+                      name="ticket_price"
+                      precision="12"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[ticket_price]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[booking_date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output].Columns[booking_date]"
+                      name="booking_date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output].Columns[booking_date]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Data Conversion Output]"
+              endId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Inputs[Lookup Input]"
+              name="Data Conversion Output"
+              startId="Package\Transform and Load Ticket Sales Data\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Derived Column Output]"
+              endId="Package\Transform and Load Ticket Sales Data\Load FactTicketSales.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Transform and Load Ticket Sales Data\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Derived Column Output1]"
+              endId="Package\Transform and Load Ticket Sales Data\Data Conversion.Inputs[Data Conversion Input]"
+              name="Derived Column Output"
+              startId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output]"
+              endId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Transform and Load Ticket Sales Data\Lookup Passenger.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output1]"
+              endId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Transform and Load Ticket Sales Data\Lookup Flight.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output2]"
+              endId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Transform and Load Ticket Sales Data\Lookup booking date.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output3]"
+              endId="Package\Transform and Load Ticket Sales Data\Derived Column.Inputs[Derived Column Input]"
+              name="Lookup Match Output"
+              startId="Package\Transform and Load Ticket Sales Data\Lookup Payment date.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Merge Join Output]"
+              endId="Package\Transform and Load Ticket Sales Data\Derived Column 1.Inputs[Derived Column Input]"
+              name="Merge Join Output"
+              startId="Package\Transform and Load Ticket Sales Data\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[OLE DB Source Output]"
+              endId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[OLE DB Source Output1]"
+              endId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Sort Output]"
+              endId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Transform and Load Ticket Sales Data.Paths[Sort Output1]"
+              endId="Package\Transform and Load Ticket Sales Data\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Transform and Load Ticket Sales Data\sort by ticket_id.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -4060,6 +6400,14 @@ where [refTable].[AlternateAirportID] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\Transform and Load Flight Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{1C7FC45A-379C-4A7B-AC4B-1C5A7554CEEA}"
+      DTS:From="Package\Transform and Load Flight Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Transform and Load Ticket Sales Data" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -4173,6 +6521,32 @@ where [refTable].[AlternateAirportID] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="267,42"
+          Id="Package\Transform and Load Ticket Sales Data"
+          TopLeft="64.5,465.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="196.25,420.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5011,6 +7385,505 @@ where [refTable].[AlternateAirportID] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Transform and Load Ticket Sales Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="230,42"
+          Id="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging"
+          TopLeft="51.5,42.5" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging"
+          TopLeft="418.5,46.5" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Transform and Load Ticket Sales Data\sort by ticket_id"
+          TopLeft="94,134" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[OLE DB Source Output]"
+          TopLeft="169,84.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49.5"
+              Start="0,0"
+              End="0,42">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Transform and Load Ticket Sales Data\sort by ticket_id 1"
+          TopLeft="445,132" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[OLE DB Source Output1]"
+          TopLeft="525.5,88.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.5"
+              Start="0,0"
+              End="0,36">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Transform and Load Ticket Sales Data\Merge Join"
+          TopLeft="314.5,224.5" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Sort Output]"
+          TopLeft="527,174">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-125.166666666667,50.5"
+              Start="0,0"
+              End="-125.166666666667,43">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9398216939079" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9398216939079"
+                    Point2="0,29.9398216939079"
+                    Point3="-4,29.9398216939079" />
+                  <mssgle:LineSegment
+                    End="-121.166666666667,29.9398216939079" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-121.166666666667,29.9398216939079"
+                    Point2="-125.166666666667,29.9398216939079"
+                    Point3="-125.166666666667,33.9398216939079" />
+                  <mssgle:LineSegment
+                    End="-125.166666666667,43" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Sort Output1]"
+          TopLeft="171.5,176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="188.666666666667,48.5"
+              Start="0,0"
+              End="188.666666666667,41">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.7540861812779" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.7540861812779"
+                    Point2="0,28.7540861812779"
+                    Point3="4,28.7540861812779" />
+                  <mssgle:LineSegment
+                    End="184.666666666667,28.7540861812779" />
+                  <mssgle:CubicBezierSegment
+                    Point1="184.666666666667,28.7540861812779"
+                    Point2="188.666666666667,28.7540861812779"
+                    Point3="188.666666666667,32.7540861812779" />
+                  <mssgle:LineSegment
+                    End="188.666666666667,41" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Transform and Load Ticket Sales Data\Data Conversion"
+          TopLeft="305.5,358.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Transform and Load Ticket Sales Data\Lookup Passenger"
+          TopLeft="304.5,435.5" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Data Conversion Output]"
+          TopLeft="388,400.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35"
+              Start="0,0"
+              End="0,27.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Transform and Load Ticket Sales Data\Lookup Flight"
+          TopLeft="316,528" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output]"
+          TopLeft="389.25,477.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50.5"
+              Start="0,0"
+              End="0,43">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,15.6953125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Transform and Load Ticket Sales Data\Lookup booking date"
+          TopLeft="293.5,621.5" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output1]"
+          TopLeft="386.25,570">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.5"
+              Start="0,0"
+              End="0,44">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,16.1953125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Transform and Load Ticket Sales Data\Lookup Payment date"
+          TopLeft="289,718" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output2]"
+          TopLeft="383,663.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.5"
+              Start="0,0"
+              End="0,47">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,17.6953125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Transform and Load Ticket Sales Data\Derived Column"
+          TopLeft="303.5,802.5" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Lookup Match Output3]"
+          TopLeft="382.25,760">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.5"
+              Start="0,0"
+              End="0,35">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,11.6953125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Transform and Load Ticket Sales Data\Load FactTicketSales"
+          TopLeft="284.5,899.5" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Derived Column Output]"
+          TopLeft="379.75,844.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Transform and Load Ticket Sales Data\Derived Column 1"
+          TopLeft="301.5,287.5" />
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Merge Join Output]"
+          TopLeft="314.5,245.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13,63"
+              Start="0,0"
+              End="-20.5,63">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-31.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-31.5,0"
+                    Point2="-35.5,0"
+                    Point3="-35.5,4" />
+                  <mssgle:LineSegment
+                    End="-35.5,59" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-35.5,59"
+                    Point2="-35.5,63"
+                    Point3="-31.5,63" />
+                  <mssgle:LineSegment
+                    End="-20.5,63" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Transform and Load Ticket Sales Data.Paths[Derived Column Output1]"
+          TopLeft="385.5,329.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29"
+              Start="0,0"
+              End="0,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup Passenger">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimPassenger]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup Flight">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimFlight]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup booking date">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimDate]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup Payment date">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimDate]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Load FactTicketSales">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
