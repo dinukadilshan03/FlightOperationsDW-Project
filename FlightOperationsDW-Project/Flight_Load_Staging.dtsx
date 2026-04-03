@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Flight_Load_Staging"
   DTS:PackageType="5"
-  DTS:VersionBuild="70"
-  DTS:VersionGUID="{C972C02C-50EB-495D-B5D6-8BD03E3F0E03}">
+  DTS:VersionBuild="72"
+  DTS:VersionGUID="{7D6D9AAB-5DC8-4A32-AFA6-1CEB3BB72B5E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -32,7 +32,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\aircraft.csv">
+          DTS:ConnectionString="C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\aircraft.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -41,7 +41,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="aircraft_id"
-              DTS:DTSID="{B0588CEF-11F4-4DB9-A53F-719499D93D64}"
+              DTS:DTSID="{A4B15B75-5513-4B08-8389-97DA02476614}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="model"
-              DTS:DTSID="{0FD7FB39-21A3-4E17-BC0D-3380E642FA05}"
+              DTS:DTSID="{F71BF3B2-2E33-4B15-AB13-EEC2E8EA693B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="manufacturer"
-              DTS:DTSID="{E44AB7C2-B93E-466C-92D2-5E0CA3E4BFBD}"
+              DTS:DTSID="{E86302EC-BE63-4FCB-BD76-DE379DA90577}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="capacity"
-              DTS:DTSID="{7ED2E42C-E79D-4921-AAEC-80A7CCBB4A70}"
+              DTS:DTSID="{11A45056-8139-4EE3-B13A-7E744F34BBC9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="acquisition_date"
-              DTS:DTSID="{3648CA8B-5FA2-4CD4-9FFD-7A01353E08C3}"
+              DTS:DTSID="{A9C76656-1C32-42E4-A153-3FFAA0D20B79}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="current_status"
-              DTS:DTSID="{D2ED4C8C-C18C-4401-9FCB-B28601BF96E8}"
+              DTS:DTSID="{4256C3E3-9EF8-437B-854B-01FC79A02112}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -108,7 +108,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\airports.csv">
+          DTS:ConnectionString="C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\airports.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -177,11 +177,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-E552K0U\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOps_Staging;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-SLIIT_Flight_Load_Staging-{EF2400FE-0582-42AC-BAB1-8C65470AF585}DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa;">
+          DTS:ConnectionString="Data Source=DESKTOP-L36M70J\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOps_Staging;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-SLIIT_Flight_Load_Staging-{EF2400FE-0582-42AC-BAB1-8C65470AF585}DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABbqTwUW36PKxV4RwVRdZDPVdCwaiIZzVRMtZ+vVmXUtQAAAAAOgAAAAAIAACAAAACp4w605jVkIYtrJqH6gvcv7H+LlG9oXdKGXTYAE8PMGyAAAACQ2cXel2QA2eitr1pSJHggrSw7W2LgtDHiv4HQ+/Teg0AAAABNz00mLGLF+r88jaO7mYZKGE+m3QxCXNUlV1tZmF7q9fTf1vONonHA9wO8e1rOi7n1UVDZJdn+h31FR5TdS+E/</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADvmpwxFxVkYZIYssoQ1JUoGAczvUolmP8ONd0TEDFHXgAAAAAOgAAAAAIAACAAAABt3S3w2Salwb7daTGKVBJyWgxLShyi/Wv1pkt1NT2HIBAAAAC7coTeaLhryTNNQw8vP10aQAAAAB0JaJtxPhB0Tio1+5+C8l1xfmNDSXRgyaW4lsAcYI31Z3t2f1/ixBudydjbU0NhRvfAioXd/IJAOSLtc1bHREs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -194,11 +194,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-E552K0U\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightTicketing_SourceDB;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-SLIIT_Flight_Load_Staging-{3CA4B293-2CBB-4F97-976B-B8EFAE728501}DESKTOP-E552K0U\MSSQLSERVER22.FlightTicketing_SourceDB.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=DESKTOP-L36M70J\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightTicketing_SourceDB;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-SLIIT_Flight_Load_Staging-{3CA4B293-2CBB-4F97-976B-B8EFAE728501}DESKTOP-E552K0U\MSSQLSERVER22.FlightTicketing_SourceDB.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB1IIvF6LC/dIY3K3NYTGCtlollA4GW5mtPaffgdeuuIgAAAAAOgAAAAAIAACAAAADg8vTlqejgqtoWtNrZXEzcOYoZc5lR0FdsmzPxYzPpkSAAAAAX867k+A7N+MjKlYm5Tknz0arxUXUl8jffO/kGppyYSkAAAACbFN9pqywHd5sCDa2uoACU0+YBT7J9kimdkIwz2RY1eSjLGw6ficvkGYLKhBxkz77Y/svTLIWJBi8zFUvGxaGF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB/kyP4grjaFgKa87OOL0At0Gk0yH4SOuxBAstA/+LuhQAAAAAOgAAAAAIAACAAAABy/wlO+qB5E6k7vPvnSzl6M/bmXzcXl2McYhvKFO/TgBAAAADYkgX5RFepxUt1h7BXLSXwQAAAAGASyn3m+5iKlXK5acBrlCMze4mkBbqq+omFTzoQ7xSWzVSJzTNIFxdiVDYWeRG6nECopj5yHaClUbY0vNdcz1w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -218,7 +218,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\engineers.txt">
+          DTS:ConnectionString="C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\engineers.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -276,7 +276,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\flights.csv">
+          DTS:ConnectionString="C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\flights.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -285,7 +285,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="flight_id"
-              DTS:DTSID="{BEAF33EE-D113-48FD-B81B-6850370CD45E}"
+              DTS:DTSID="{87EFAF97-70E9-4943-97F9-96ED3AF0A1AC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -294,7 +294,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="flight_number"
-              DTS:DTSID="{C96D32EB-1232-4B2C-B043-23AB33A2D48B}"
+              DTS:DTSID="{BFFDFC18-0D6C-46A3-A37D-9C13972ED899}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -303,7 +303,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="aircraft_id"
-              DTS:DTSID="{002575B1-AC51-460B-8A8A-7BD3D84F5188}"
+              DTS:DTSID="{8C578CA4-AAF6-4A1A-828D-DE14725ACC8E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -312,7 +312,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="departure_airport_id"
-              DTS:DTSID="{19661B6F-1507-4D4F-A37E-CEE1763B704C}"
+              DTS:DTSID="{72FEF0D9-C992-437A-927A-2078AA8B0B43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -321,7 +321,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="arrival_airport_id"
-              DTS:DTSID="{2AA5B13C-6179-422D-BAC3-0CD7E4391921}"
+              DTS:DTSID="{A86BAA6C-DA2E-4D48-AF85-2622EF048EB3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -330,7 +330,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="scheduled_departure"
-              DTS:DTSID="{C1070AC9-6457-4AC6-AB9C-5EC939029F3E}"
+              DTS:DTSID="{51DF6880-16B8-441C-B208-D653FC269A08}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -339,7 +339,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="scheduled_arrival"
-              DTS:DTSID="{43AD2B90-A818-4697-ADC7-1BE32E811D44}"
+              DTS:DTSID="{2C7B5868-C4C1-45DB-AB15-A5F29CC43048}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -348,7 +348,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="actual_departure"
-              DTS:DTSID="{EE7E87D4-27AC-466E-B2F5-6D09FE48E215}"
+              DTS:DTSID="{E046164F-4BDC-4320-8BB7-51C35D6042D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -357,7 +357,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="actual_arrival"
-              DTS:DTSID="{FD4D5FFF-DD81-4D69-AD04-078E50DAEB4F}"
+              DTS:DTSID="{B6FE6B1D-DBBF-419E-B189-BB1F72B5467B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -366,7 +366,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="delay_minutes"
-              DTS:DTSID="{4FCD62CF-278C-414B-903A-9C8640A6DA47}"
+              DTS:DTSID="{3CA2DA1F-3FEA-4C08-BD69-7D7F8585C1AA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -375,7 +375,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="flight_status"
-              DTS:DTSID="{D4CC83D0-148E-44CB-A945-57DBB3DEDE17}"
+              DTS:DTSID="{A0FE1904-E654-430A-8979-B9D1F9373F94}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -397,7 +397,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\maintenance_records.txt">
+          DTS:ConnectionString="C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\maintenance_records.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -406,7 +406,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="maintenance_id"
-              DTS:DTSID="{EF63F024-6975-4526-8556-B97E9C3BFA64}"
+              DTS:DTSID="{366C3ACB-4C51-455D-A2A3-D1129F70A484}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -415,7 +415,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="aircraft_id"
-              DTS:DTSID="{BF4B296F-7DF1-4A43-A260-A677B6D98924}"
+              DTS:DTSID="{3C715D65-4A65-4769-B453-502898D60E7F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -424,7 +424,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="engineer_id"
-              DTS:DTSID="{528CBF32-CE71-4BA8-ADA5-B3E93CC6028B}"
+              DTS:DTSID="{CC3D7DA9-BB55-4171-A808-E359B31C2F13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -433,7 +433,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="maintenance_type"
-              DTS:DTSID="{5601E572-977E-4995-8EB2-C5499C1931A2}"
+              DTS:DTSID="{6EB0951A-9E0B-43FB-B65F-337139F4203E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -442,7 +442,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="maintenance_date"
-              DTS:DTSID="{3E9797B6-C768-43F5-BF12-D155BE4C5462}"
+              DTS:DTSID="{FE566691-4445-4255-8427-50C60601B17C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -451,7 +451,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cost"
-              DTS:DTSID="{EDD520DD-DF2F-469F-AB65-7C78FA773E47}"
+              DTS:DTSID="{09529807-B328-49D3-B824-488332E0FA80}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -460,7 +460,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="downtime_hours"
-              DTS:DTSID="{882D2F99-CDCB-44E2-825F-4B77FD86EB2E}"
+              DTS:DTSID="{8B45F95B-A2F2-4861-91B4-3C3E5BC0A953}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -475,7 +475,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="BasePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -4889,35 +4889,35 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="230,42"
+          Size="230.4,41.6"
           Id="Package\Extract Aircraft Data to Staging"
           TopLeft="252,43" />
         <NodeLayout
-          Size="233,42"
+          Size="232.8,41.6"
           Id="Package\Extract Airports Data to Staging"
           TopLeft="248,133" />
         <NodeLayout
-          Size="239,42"
+          Size="239.2,41.6"
           Id="Package\Extract Engineer Data to Staging"
           TopLeft="236,681" />
         <NodeLayout
-          Size="227,42"
+          Size="227.2,41.6"
           Id="Package\Extract Flights Data to Staging"
           TopLeft="251,235" />
         <NodeLayout
-          Size="302,42"
+          Size="302.4,41.6"
           Id="Package\Extract Maintenance Records Data to Staging"
           TopLeft="212,810" />
         <NodeLayout
-          Size="247,42"
+          Size="247.2,41.6"
           Id="Package\Extract Passenger Data to Staging"
           TopLeft="244,341" />
         <NodeLayout
-          Size="238,42"
+          Size="238.4,41.6"
           Id="Package\Extract Payment Data to Staging"
           TopLeft="243,561" />
         <NodeLayout
-          Size="224,42"
+          Size="224,41.6"
           Id="Package\Extract Ticket Data to Staging"
           TopLeft="251,454" />
         <EdgeLayout

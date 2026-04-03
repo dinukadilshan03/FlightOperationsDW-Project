@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="70"
-  DTS:VersionGUID="{3F2FA89C-CAEF-4AD7-863C-2BBEC20A52B2}">
+  DTS:VersionBuild="72"
+  DTS:VersionGUID="{8015724B-C6F2-41F1-BFA3-EF6A019C9218}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-E552K0U\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOperationsDW;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{F2D5BBC0-C330-40A1-9974-3CFC3A882377}DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=DESKTOP-L36M70J\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOperationsDW;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package1-{F2D5BBC0-C330-40A1-9974-3CFC3A882377}DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABlXogPmtdAClQu3H+KJQEYfcLHe8jUZd4+WO+fwPO6SAAAAAAOgAAAAAIAACAAAACtWiqL3R2pnkw3gNZ6EcoFj6P6HgWM9gSBLLo3Nt0a4SAAAACdMRZ4eTFu6PT6FOvpGgmzz0NFmNN/zqkSxzBM28i0E0AAAAAv6j/T90JoSC7mUgKAWh/xGarFbSPVxhygtKpfdOVFV+hIA+Q/6/JpdFAIfysnos8RRPcutSpIAI6bR45/bOeM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAEThCfRt7Bt19wAOVEQudUkD28UO79H/LCPIyFX5oi9AAAAAAOgAAAAAIAACAAAABqJMpzXRvx3psT3IwE+xW39E9H2n7HamQC+7uCB+4PthAAAACxI0XAfytCp5TeHiiHc+mUQAAAAJqi3+yKzEQO4bn+pneVE4kZLIJ1mayxjMHQGoZQs3EZR8o6rVhkCbFSbWENJ2eV0i5PXdfE8fLanBucOpz7ZV0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +42,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-E552K0U\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOps_Staging;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Package1-{E25344BC-5ACC-43FE-8B0F-1637935A8E86}DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=DESKTOP-L36M70J\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOps_Staging;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package1-{E25344BC-5ACC-43FE-8B0F-1637935A8E86}DESKTOP-E552K0U\MSSQLSERVER22.FlightOps_Staging.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD4ITgwPYiTUG2F+t6seTToP+jObe9xlGvpEFQs5A/L+gAAAAAOgAAAAAIAACAAAADJPgZEMuN4nPPjt0QL73vOMYhu6rOUkTBn06X5SChKbSAAAAB0jmcrtwc88/w/QRFa+fzBifQV9chUj0lCWMuMQ3YzpUAAAAD5gnSQ7QsalHrhtG2H3vzVfqPyRlgPDm4h7gzW3XR/A6lYCnxMHH9mfMCRHPsXevyorFqB+TEgFtwZNGFbSnVX</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABSyaYMA2yLDCowpKaZ4LvEqP06gKYfBg9EZ3CqmQ1m/AAAAAAOgAAAAAIAACAAAAAiyEwge3EAWDeFzVo9ShBhvHyn8lQo4OTCeAneJW//wRAAAAC/sCT+XN0bAG8MEdqyNP9jQAAAAG1dARrGMKBvz/0egxmFbzjWOsyQ47XZIVdQHGtd/YLmxOt/Y7+qZvg90AJPhVGjT2Xpy+wx45WiCrxUHNO7930</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -61,7 +61,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="CurrentDate">
       <DTS:VariableValue
-        DTS:DataType="7">3/27/2026 8:32:19 PM</DTS:VariableValue>
+        DTS:DataType="7">3/31/2026 7:09:23 PM</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -8009,33 +8009,41 @@ where [refTable].[Date] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="242,42"
+          Size="241.6,41.6"
           Id="Package\Transform and Load Aircraft Data"
           TopLeft="75.5,119.5" />
         <NodeLayout
-          Size="239,42"
+          Size="239.2,41.6"
           Id="Package\Transform and Load Airport Data"
           TopLeft="79.5,37.5" />
         <NodeLayout
-          Size="251,42"
+          Size="251.2,41.6"
           Id="Package\Transform and Load Engineer Data"
           TopLeft="67.5,209.5" />
         <NodeLayout
-          Size="234,42"
+          Size="233.6,41.6"
           Id="Package\Transform and Load Flight Data"
           TopLeft="77.5,378.5" />
         <NodeLayout
-          Size="270,42"
+          Size="270.4,41.6"
           Id="Package\Transform and Load Maintenance Data"
           TopLeft="71.5,714.5" />
         <NodeLayout
-          Size="259,42"
+          Size="259.2,41.6"
           Id="Package\Transform and Load Passenger Data"
           TopLeft="67.5,290.5" />
         <NodeLayout
-          Size="267,42"
+          Size="267.2,41.6"
           Id="Package\Transform and Load Ticket Sales Data"
           TopLeft="71.5,539.5" />
+        <NodeLayout
+          Size="209.6,41.6"
+          Id="Package\Truncate FactMaintenance"
+          TopLeft="102,621" />
+        <NodeLayout
+          Size="204,41.6"
+          Id="Package\Truncate FactTicketSales"
+          TopLeft="97.5,455.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="197.75,79.5">
@@ -8124,14 +8132,6 @@ where [refTable].[Date] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Truncate FactTicketSales"
-          TopLeft="97.5,455.5" />
-        <NodeLayout
-          Size="210,42"
-          Id="Package\Truncate FactMaintenance"
-          TopLeft="102,621" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="197,420.5">
@@ -9767,7 +9767,30 @@ where [refTable].[Date] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging">
+    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup Passenger">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimPassenger]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9776,6 +9799,29 @@ where [refTable].[Date] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup Payment date">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimDate]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -9799,6 +9845,19 @@ where [refTable].[Date] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transform and Load Ticket Sales Data\Extract from Ticket Staging">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -9835,65 +9894,6 @@ where [refTable].[Date] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup Passenger">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimPassenger]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Ticket Sales Data\Lookup Payment date">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimDate]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Transform and Load Ticket Sales Data\Extract from Payments Staging">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

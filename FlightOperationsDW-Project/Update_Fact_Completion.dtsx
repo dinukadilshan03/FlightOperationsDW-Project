@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Update_Fact_Completion"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{95427CC3-3D97-4B06-A197-00C7632C3604}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{66421599-CA37-4199-B89B-B9B9CF14296F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-E552K0U\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOperationsDW;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Update_Fact_Completion-{FCE60EC1-2E7B-48BB-BA8E-DF789E597199}DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=DESKTOP-L36M70J\MSSQLSERVER22;User ID=sa;Initial Catalog=FlightOperationsDW;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Update_Fact_Completion-{FCE60EC1-2E7B-48BB-BA8E-DF789E597199}DESKTOP-E552K0U\MSSQLSERVER22.FlightOperationsDW.sa;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPPOFUi8miUqxi/frg4qOdgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA+cRorEdl/tX9KZbU4F2sCEiXDuqmnU/NRvwTAsd9P1AAAAAAOgAAAAAIAACAAAABFvYMpWpS2UJ5XK7Ngyk57wN7yy9X9YJmsvG30FbBgbyAAAABybaQVMmb5zGq+Myt8tIiInJX+QZRgX71EuKcZ7nxOJEAAAAAqvJbPjNK7IwLrUz3zJ82BwOTzrVOWX0RM05iwbZMICWBrT2KPcWM5hAfR2f3G0/DSrHGoHNSvn1ngjfFiCaJL</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD33lY1fE9axpXsYkqkeZF1ZrAT+I/UUAvCl8UH2IHWaQAAAAAOgAAAAAIAACAAAACmHkK+bxM7EmqN9iW/Eb4hUaSL3CtYX0cMmDeb5TrURxAAAACEquLiMjhiCWXfoO6RoQCkQAAAAHvTBaz5Njz9DuDeNVeyI8jbEWDWt6kXxDKHhXPQRK6oCzQBCWRG63TygGIn3383wQscR6PPqAUlb+lmwXbz7GQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -48,7 +48,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\FactcompletionUpdates.csv">
+          DTS:ConnectionString="C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\FactcompletionUpdates.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{C5BA399E-6A32-40A3-908A-3C54967CB32F}"
+              DTS:DTSID="{DF20F50D-6844-4E7D-8D0C-8A113CDC52E4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -65,7 +65,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 1"
-              DTS:DTSID="{CE4D46F7-CD7A-4CFF-9AFD-F1A4095FEB02}"
+              DTS:DTSID="{E16F719E-1DB9-4A37-848E-ED86264170E3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="BasePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\dinuka\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\kushantha\source\repos\FlightOperationsDW-Project\FlightOperationsDW-Project\dataSources\</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -632,7 +632,7 @@ WHERE TicketID = ?;</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="197,42"
+          Size="196.8,41.6"
           Id="Package\Update Fact Completion"
           TopLeft="83.5,47.5" />
       </GraphLayout>
@@ -644,39 +644,21 @@ WHERE TicketID = ?;</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="244,42"
+          Size="172.8,41.6"
+          Id="Package\Update Fact Completion\OLE DB Command"
+          TopLeft="104.5,325.5" />
+        <NodeLayout
+          Size="244,41.6"
           Id="Package\Update Fact Completion\Load FactCompletionUpdates csv"
           TopLeft="54.5,77.5" />
         <NodeLayout
-          Size="115,42"
-          Id="Package\Update Fact Completion\Lookup"
-          TopLeft="121.5,161.5" />
-        <EdgeLayout
-          Id="Package\Update Fact Completion.Paths[Flat File Source Output]"
-          TopLeft="177.75,119.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42"
-              Start="0,0"
-              End="0,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="158,42"
+          Size="158.4,41.6"
           Id="Package\Update Fact Completion\Derived Column"
           TopLeft="106.5,240.5" />
+        <NodeLayout
+          Size="115.2,41.6"
+          Id="Package\Update Fact Completion\Lookup"
+          TopLeft="121.5,161.5" />
         <EdgeLayout
           Id="Package\Update Fact Completion.Paths[Lookup Match Output]"
           TopLeft="182.25,203.5">
@@ -701,10 +683,28 @@ WHERE TicketID = ?;</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="173,42"
-          Id="Package\Update Fact Completion\OLE DB Command"
-          TopLeft="104.5,325.5" />
+        <EdgeLayout
+          Id="Package\Update Fact Completion.Paths[Flat File Source Output]"
+          TopLeft="177.75,119.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Update Fact Completion.Paths[Derived Column Output]"
           TopLeft="188.25,282.5">
@@ -736,7 +736,7 @@ WHERE TicketID = ?;</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -746,7 +746,7 @@ WHERE TicketID = ?;</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
