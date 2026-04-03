@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Flight_Load_Staging"
   DTS:PackageType="5"
-  DTS:VersionBuild="72"
-  DTS:VersionGUID="{7D6D9AAB-5DC8-4A32-AFA6-1CEB3BB72B5E}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{60CDFC41-C501-4A2A-9E21-24AB76BF3822}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -181,7 +181,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADvmpwxFxVkYZIYssoQ1JUoGAczvUolmP8ONd0TEDFHXgAAAAAOgAAAAAIAACAAAABt3S3w2Salwb7daTGKVBJyWgxLShyi/Wv1pkt1NT2HIBAAAAC7coTeaLhryTNNQw8vP10aQAAAAB0JaJtxPhB0Tio1+5+C8l1xfmNDSXRgyaW4lsAcYI31Z3t2f1/ixBudydjbU0NhRvfAioXd/IJAOSLtc1bHREs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACFNj8FM1tW9EOZEWIxQlYet4gj8MXYnmtgGIl4AMT3wAAAAAAOgAAAAAIAACAAAAAEx0eS6zOALUz3LEszPqpQV1ZRio657ypwKsQWFzgSsBAAAAA7xCGIIA+gjkez50nZsC4IQAAAAGLjdxh+sqK3ZpnYXGGbZZMWve5rbQohxJRUM5XETCMEV2ysIo4HPEHHaQQ0187TLWVNf+4V9c1ZeXNhqLPokOY</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -198,7 +198,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB/kyP4grjaFgKa87OOL0At0Gk0yH4SOuxBAstA/+LuhQAAAAAOgAAAAAIAACAAAABy/wlO+qB5E6k7vPvnSzl6M/bmXzcXl2McYhvKFO/TgBAAAADYkgX5RFepxUt1h7BXLSXwQAAAAGASyn3m+5iKlXK5acBrlCMze4mkBbqq+omFTzoQ7xSWzVSJzTNIFxdiVDYWeRG6nECopj5yHaClUbY0vNdcz1w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsIBN4O+Qs06H6D6KuMRu5wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC2xZn9puOQ3CqGMQBJbTPRE4Z0GB+HXTATKephZWc7OQAAAAAOgAAAAAIAACAAAAAxxOGLMT0u/enxyPNzINZ35rxdFCE26Ar9ofFpI56ACRAAAAB6MgiUZYbym0xXCHQZOOKZQAAAAOdIhr7oiJQE1Os+oHma8JWtk5o2qSTXIngpJTKF9eEcDybk330xPc2SzZu6cmvHkq8qQutt9YG15BZrBZjR2Uc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -5514,13 +5514,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="247,42"
-          Id="Package\Extract Passenger Data to Staging\Extract from Passenger SourceDB"
-          TopLeft="78.5,46.5" />
-        <NodeLayout
-          Size="188,42"
+          Size="188,41.6"
           Id="Package\Extract Passenger Data to Staging\Load to StgPassenger"
           TopLeft="366.5,48.5" />
+        <NodeLayout
+          Size="247.2,41.6"
+          Id="Package\Extract Passenger Data to Staging\Extract from Passenger SourceDB"
+          TopLeft="78.5,46.5" />
         <EdgeLayout
           Id="Package\Extract Passenger Data to Staging.Paths[OLE DB Source Output]"
           TopLeft="325.5,68.5">
