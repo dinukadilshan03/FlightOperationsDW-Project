@@ -4,8 +4,15 @@ A SQL Server Integration Services (SSIS) solution that builds a fully-populated 
 
 ---
 
+## About
+
+This project demonstrates an end-to-end ETL pipeline for a fictional airline's operational data. It was built as a data warehousing exercise to practise SSIS package development, star-schema design, and accumulating snapshot fact table patterns. The warehouse consolidates flight schedules, ticket sales, crew assignments, and maintenance records into a single analytical store, enabling business intelligence reporting across flight performance, revenue, and maintenance KPIs.
+
+---
+
 ## 📋 Table of Contents
 
+- [About](#about)
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Data Sources](#data-sources)
